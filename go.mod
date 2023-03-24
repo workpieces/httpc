@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/stretchr/testify v1.8.2
-	github.com/workpieces/log v0.0.0-20230323162659-38b7250ceb09
+	github.com/workpieces/log v0.0.0-20230324013400-a5638085f2aa
 )
 
 require (
