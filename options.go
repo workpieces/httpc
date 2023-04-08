@@ -76,6 +76,14 @@ func WithAuthToken(token string) ClientOptFn {
 	})
 }
 
+// WithAuthBasic provides basic auth for requests.
+func WithAuthBasic(token string) ClientOptFn {
+	return WithAuth(func(r *http.Request) error {
+		r.Header.Set("Authorization", "Basic "+token)
+		return nil
+	})
+}
+
 // WithSessionCookie provides cookie auth for requests to mimic the browser.
 // Typically, session is influxdb.Session.Key.
 func WithSessionCookie(session string) ClientOptFn {
