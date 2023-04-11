@@ -198,7 +198,7 @@ var DefaultTransportInsecure http.RoundTripper = &http.Transport{
 func dialContext(ctx context.Context, network, addr string) (net.Conn, error) {
 	d := net.Dialer{
 		Timeout:   5 * time.Minute,
-		KeepAlive: 30 * time.Second,
+		KeepAlive: 5 * time.Minute,
 		DualStack: true,
 	}
 	return d.Dial(network, addr)
