@@ -68,6 +68,13 @@ func WithAuth(fn func(r *http.Request) error) ClientOptFn {
 	}
 }
 
+func WithAuthNoPrefix(token string) ClientOptFn {
+	return WithAuth(func(r *http.Request) error {
+		r.Header.Set("Authorization", token)
+		return nil
+	})
+}
+
 // WithAuthToken provides token auth for requests.
 func WithAuthToken(token string) ClientOptFn {
 	return WithAuth(func(r *http.Request) error {
