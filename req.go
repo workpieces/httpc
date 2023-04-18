@@ -180,7 +180,7 @@ func (r *Req) do(ctx context.Context) error {
 	}
 
 	defer func() {
-		io.Copy(io.Discard, resp.Body) // drain body completely
+		//io.Copy(io.Discard, resp.Body) // drain body completely
 		resp.Body.Close()
 	}()
 
