@@ -13,8 +13,6 @@ github.com/stretchr/testify v1.7.1/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/
 github.com/stretchr/testify v1.8.0/go.mod h1:yNjHg4UonilssWZ8iaSj1OCr/vHnekPRkoO+kdMU+MU=
 github.com/stretchr/testify v1.8.2 h1:+h33VjcLVPDHtOdpUCuF+7gSuG3yGIftsP1YvFihtJ8=
 github.com/stretchr/testify v1.8.2/go.mod h1:w2LPCIKwWwSfY2zedu0+kehJoqGctiVI29o6fzry7u4=
-github.com/workpieces/log v0.0.0-20230323162659-38b7250ceb09 h1:MNU2YdjbtvswT/rrK00aR35zyWMgHcujiRZaZrKviRo=
-github.com/workpieces/log v0.0.0-20230323162659-38b7250ceb09/go.mod h1:UNB4mAx+T/J9KxZ2iap1tLM5MBJhqv6BgMZ1mK3TU3U=
 github.com/workpieces/log v0.0.0-20230324013400-a5638085f2aa h1:pETqw6f9nbjwY79Qj7ZbuM4yi8NM68WkibzKAmdlw2c=
 github.com/workpieces/log v0.0.0-20230324013400-a5638085f2aa/go.mod h1:UNB4mAx+T/J9KxZ2iap1tLM5MBJhqv6BgMZ1mK3TU3U=
 golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8 h1:0A+M6Uqn+Eje4kHMK80dtF3JCXC4ykBgQG4Fe06QRhQ=

@@ -184,11 +184,6 @@ func (r *Req) do(ctx context.Context) error {
 		resp.Body.Close()
 	}()
 
-	r.log.
-		WithField("response_code", resp.StatusCode).
-		WithField("response_byte", resp.ContentLength).
-		Info("response")
-
 	if r.respFn != nil {
 		if err := r.respFn(resp); err != nil {
 			return err
